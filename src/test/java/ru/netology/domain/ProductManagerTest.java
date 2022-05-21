@@ -73,22 +73,22 @@ class ProductManagerTest {
 
     }
 
-    @Test
-    void shouldSearchByTextDifferentProducts() {
+    // @Test
+    // void shouldSearchByTextDifferentProducts() {
 
-        ProductManager manager = new ProductManager();
+    //    ProductManager manager = new ProductManager();
 
-        manager.add(first);
-        manager.add(second);
-        manager.add(third);
+    //   manager.add(first);
+    //   manager.add(second);
+    //   manager.add(third);
 
 
-        Product[] expected = {first, second};
-        Product[] actual = manager.searchBy("Dostoevsky");
+    //  Product[] expected = {first, second};
+    //  Product[] actual = manager.searchBy("Dostoevsky");
 
-        assertArrayEquals(expected, actual);
+    //assertArrayEquals(expected, actual);
 
-    }
+//}
 
     @Test
     void shouldFindMatches() {
