@@ -1,10 +1,14 @@
-package ru.netology.manager;
+package ru.netology.domain;
+
 
 public class ProductManager {
-
     protected Product[] products = new Product[0];
+
     protected Repository repository = new Repository();
 
+    public ProductManager() {
+
+    }
 
     public ProductManager(Repository repository) {
         this.repository = repository;
@@ -14,6 +18,7 @@ public class ProductManager {
     public void add(Product product) {
         repository.save(product);
     }
+
 
     public Product[] searchBy(String text) {
         Product[] result = new Product[0];
@@ -37,4 +42,5 @@ public class ProductManager {
             return false;
         }
     }
+
 }

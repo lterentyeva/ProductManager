@@ -1,8 +1,9 @@
-package ru.netology.manager;
+package ru.netology.domain;
 
 public class Book extends Product {
 
     protected String author;
+
 
     public Book(int id, String title, int cost, String author) {
         super(id, title, cost);
